@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+}
+
+.game-container {
+    position: relative;
+    width: 400px;
+    height: 600px;
+    overflow: hidden;
+    background-color: #333;
+    border: 2px solid #fff;
+}
+
+.road {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#555, #000);
+    overflow: hidden;
+}
+
+.score {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 24px;
+    z-index: 1;
+}
+
+.player-car {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    width: 50px;
+    height: 100px;
+    background-color: rgba(255, 0, 0, 0);
+    background-image: url('img/playing\ race\ car\ one.png'); /* Use an image for the player's car */
+    background-size: cover;
+    transform: translateX(-50%);
+}
+
+.obstacle {
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    width: 50px;
+    height: 100px;
+    background-size: cover;
+    transform: translateX(-50%);
+}
+
+.obstacle-car {
+    background-color: blue;
+    background-image: url('obstacle-car.png'); /* Use an image for the obstacle car */
+    background-size: cover;
+}
+
+.controls {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+    z-index: 2;
+}
+
+.arrow-button {
+    width: 50px;
+    height: 50px;
+    background-color: #555;
+    color: #fff;
+    font-size: 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.arrow-button:hover {
+    background-color: #777;
+}
+
+.game-over-popup, .start-message {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 3;
+}
+
+.start-message {
+    font-size: 24px;
+}

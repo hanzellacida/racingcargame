@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Racing Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="score">Score: 0</div>
+        <div class="road">
+            <div class="player-car"></div>
+            <div class="obstacle obstacle-car"></div>
+        </div>
+        <div class="controls">
+            <button class="arrow-button left-arrow">&larr;</button>
+            <button class="arrow-button right-arrow">&rarr;</button>
+        </div>
+    </div>
+    <div class="game-over-popup">
+        <p class="game-over-message">Game Over!<br>Score: <span class="final-score">0</span><br>Press any key to restart</p>
+    </div>
+    <div class="start-message">
+        <p>Press Spacebar to Start</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
